@@ -28,7 +28,7 @@ const getResultsOrCache = (ingredients: string[]) => {
   if (key in resultCache) {
     return resultCache[key];
   }
-  const res = getRecipes(key);
+  const res = getRecipes(ingredients);
   resultCache[key] = res;
   return res;
 };
@@ -40,9 +40,15 @@ const useResults = (ingredients: string[]) => {
 const Results = () => {
   const searchParams = useSearchParams();
   const ingredients = searchParams.get("q")?.split(",") ?? [];
-  const { recipes } = useResults(ingredients;
+  const { recipes } = useResults(ingredients);
 
-  return <>{recipes.map(r => <p>{r.name}</p>)}</>;
+  return (
+    <>
+      {recipes.map((r) => (
+        <p>{r.name}</p>
+      ))}
+    </>
+  );
 };
 
 export default Results;
