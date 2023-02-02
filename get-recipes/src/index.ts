@@ -7,7 +7,7 @@ interface Env {
 }
 
 const allowedOrigins = [
-  "https://localhost:3000",
+  "http://localhost:3000",
   "https://antler-recipe-finder.vercel.app",
 ];
 
@@ -62,6 +62,7 @@ export default {
         headers: {
           "Access-Control-Allow-Origin": origin,
           Vary: "Origin",
+          "Content-Type": "application/json;charset=UTF-8",
         },
       }
     );

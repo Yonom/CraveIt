@@ -7,8 +7,8 @@ type Recipe = {
   name: string;
 };
 
-const getRecipes = async (ingredients: string[]) => {
-  const res = await fetch("https://gpt-embeddings.yonom.workers.dev", {
+const getResults = async (ingredients: string[]) => {
+  const res = await fetch("https://get-recipes.yonom.workers.dev", {
     method: "POST",
     body: JSON.stringify({
       key: "MLp01puIMCItAbGio0Wg",
@@ -22,13 +22,13 @@ const getRecipes = async (ingredients: string[]) => {
   return response;
 };
 
-const resultCache = {} as Record<string, ReturnType<typeof getRecipes>>;
+const resultCache = {} as Record<string, ReturnType<typeof getResults>>;
 const getResultsOrCache = (ingredients: string[]) => {
   const key = ingredients.join(",");
   if (key in resultCache) {
     return resultCache[key];
   }
-  const res = getRecipes(ingredients);
+  const res = getResults(ingredients);
   resultCache[key] = res;
   return res;
 };
