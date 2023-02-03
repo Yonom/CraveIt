@@ -59,7 +59,7 @@ export default {
 
       // generate images
       const imageTask = Promise.all(
-        recipes.slice(0, 1).map(async (r: Recipe) => {
+        recipes.map(async (r: Recipe) => {
           r.imageUrl = await doImageGeneration(
             env.OPENAI_API_KEY,
             r.description

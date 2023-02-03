@@ -1,319 +1,105 @@
 {
   "recipes": [
     {
-      "name": "Avocado Quinoa Salad",
-      "description": "Nutritious Salad with Avocado",
-      "imageUrl": "https://oaidalleapiprodscus.blob.core.windows.net/private/org-VVCttQeicObq7u7sjZ4WAuxC/user-WifZ4Wi5dg1sFZtPUZ06BYKv/img-ZnTSIaiYsltKmQYkmJ7LRrGa.png?st=2023-02-03T08%3A09%3A12Z&se=2023-02-03T10%3A09%3A12Z&sp=r&sv=2021-08-06&sr=b&rscd=inline&rsct=image/png&skoid=6aaadede-4fb3-4698-a8f6-684d7786b067&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2023-02-02T22%3A52%3A18Z&ske=2023-02-03T22%3A52%3A18Z&sks=b&skv=2021-08-06&sig=97LResJK%2BwA7rtyU2UTirnj2On7MFxd0wo7zbDIJa0g%3D",
-      "time": "15min",
+      "name": "Baked Rice with Cheese",
+      "description": "Cheesy Baked Rice",
+      "imageUrl": "https://oaidalleapiprodscus.blob.core.windows.net/private/org-VVCttQeicObq7u7sjZ4WAuxC/user-WifZ4Wi5dg1sFZtPUZ06BYKv/img-Je5rcUFfjoUVPAwu468g9O62.png?st=2023-02-03T10%3A00%3A23Z&se=2023-02-03T12%3A00%3A23Z&sp=r&sv=2021-08-06&sr=b&rscd=inline&rsct=image/png&skoid=6aaadede-4fb3-4698-a8f6-684d7786b067&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2023-02-02T22%3A49%3A57Z&ske=2023-02-03T22%3A49%3A57Z&sks=b&skv=2021-08-06&sig=E83dweFo0YwJB2rxNE5WxzLbKou8a8W8VE2qfn5PE0Y%3D",
+      "time": "45min",
       "ingredients": [
         {
-          "name": "quinoa",
-          "amount": "1 cup"
+          "name": "Rice",
+          "amount": "4 cups"
         },
         {
-          "name": "water",
+          "name": "Bell Peppers",
+          "amount": "2, diced"
+        },
+        {
+          "name": "Tomatoes",
+          "amount": "2, diced"
+        },
+        {
+          "name": "Onion",
+          "amount": "1, diced"
+        },
+        {
+          "name": "Garlic",
+          "amount": "3 cloves, minced"
+        },
+        {
+          "name": "Sliced Cheese",
           "amount": "2 cups"
         },
         {
-          "name": "olive oil",
-          "amount": "2 tablespoons"
-        },
-        {
-          "name": "garlic, minced",
-          "amount": "1 clove"
-        },
-        {
-          "name": "diced onion",
-          "amount": "1/4 cup"
-        },
-        {
-          "name": "salt and pepper",
+          "name": "Salt and pepper",
           "amount": "to taste"
         },
         {
-          "name": "diced apples",
-          "amount": "1/2 cup"
-        },
-        {
-          "name": "diced avocados",
-          "amount": "1/2 cup"
-        },
-        {
-          "name": "apple cider vinegar",
-          "amount": "2 tablespoons"
-        },
-        {
-          "name": "sugar",
-          "amount": "1 tablespoon"
-        },
-        {
-          "name": "curry powder",
+          "name": "Curry",
           "amount": "1 teaspoon"
         },
         {
-          "name": "cinnamon",
-          "amount": "1/2 teaspoon"
+          "name": "Sugar",
+          "amount": "1 teaspoon"
+        },
+        {
+          "name": "Cinnamon",
+          "amount": "1 teaspoon"
+        },
+        {
+          "name": "Olive Oil",
+          "amount": "2 tablespoons"
+        },
+        {
+          "name": "Sunflower Oil",
+          "amount": "2 tablespoons"
+        },
+        {
+          "name": "Butter",
+          "amount": "2 tablespoons"
+        },
+        {
+          "name": "Garlic",
+          "amount": "2 cloves, minced"
+        },
+        {
+          "name": "Onion",
+          "amount": "1, minced"
+        },
+        {
+          "name": "Vinegar",
+          "amount": "1 tablespoon"
         }
       ],
       "instructions": [
-        "In a medium pot, bring the quinoa and water to a boil and then reduce to a simmer. Cook for 15 minutes or until the quinoa is tender.",
-        "In a large skillet, heat the olive oil over medium heat. Add the garlic and onion and cook for 5 minutes, stirring occasionally, until the onion is softened.",
-        "Add the diced apples, avocados, apple cider vinegar, sugar, curry powder, cinnamon, salt and pepper. Cook for an additional 2 minutes, stirring often.",
-        "Add the cooked quinoa to the skillet and toss to combine.",
-        "Serve warm or cold. Enjoy!"
+        "Preheat the oven to 350°F.",
+        "In a large pot, add the rice, bell peppers, tomatoes, onion, garlic, salt, pepper, curry, sugar, and cinnamon. Mix together until combined.",
+        "In a separate pan, heat the olive oil, sunflower oil, butter, garlic, onion, and vinegar over medium heat. Cook until the onions are softened, about 5 minutes.",
+        "Pour the onion mixture into the pot with the rice and mix until combined.",
+        "Transfer the mixture to a 9x13 baking dish. Top with the cheese.",
+        "Bake for 30 minutes, until the cheese is melted and the rice is cooked through.",
+        "Serve warm. Enjoy!"
       ]
     },
     {
-      "name": "Potato and Apple Curry",
-      "description": "Spicy Potato-Apple Curry",
-      "imageUrl": "https://oaidalleapiprodscus.blob.core.windows.net/private/org-VVCttQeicObq7u7sjZ4WAuxC/user-WifZ4Wi5dg1sFZtPUZ06BYKv/img-ZnTSIaiYsltKmQYkmJ7LRrGa.png?st=2023-02-03T08%3A09%3A12Z&se=2023-02-03T10%3A09%3A12Z&sp=r&sv=2021-08-06&sr=b&rscd=inline&rsct=image/png&skoid=6aaadede-4fb3-4698-a8f6-684d7786b067&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2023-02-02T22%3A52%3A18Z&ske=2023-02-03T22%3A52%3A18Z&sks=b&skv=2021-08-06&sig=97LResJK%2BwA7rtyU2UTirnj2On7MFxd0wo7zbDIJa0g%3D",
-      "time": "15min",
-      "ingredients": [
-        {
-          "name": "quinoa",
-          "amount": "1 cup"
-        },
-        {
-          "name": "water",
-          "amount": "2 cups"
-        },
-        {
-          "name": "olive oil",
-          "amount": "2 tablespoons"
-        },
-        {
-          "name": "garlic, minced",
-          "amount": "1 clove"
-        },
-        {
-          "name": "diced onion",
-          "amount": "1/4 cup"
-        },
-        {
-          "name": "salt and pepper",
-          "amount": "to taste"
-        },
-        {
-          "name": "diced apples",
-          "amount": "1/2 cup"
-        },
-        {
-          "name": "diced avocados",
-          "amount": "1/2 cup"
-        },
-        {
-          "name": "apple cider vinegar",
-          "amount": "2 tablespoons"
-        },
-        {
-          "name": "sugar",
-          "amount": "1 tablespoon"
-        },
-        {
-          "name": "curry powder",
-          "amount": "1 teaspoon"
-        },
-        {
-          "name": "cinnamon",
-          "amount": "1/2 teaspoon"
-        }
-      ],
-      "instructions": [
-        "In a medium pot, bring the quinoa and water to a boil and then reduce to a simmer. Cook for 15 minutes or until the quinoa is tender.",
-        "In a large skillet, heat the olive oil over medium heat. Add the garlic and onion and cook for 5 minutes, stirring occasionally, until the onion is softened.",
-        "Add the diced apples, avocados, apple cider vinegar, sugar, curry powder, cinnamon, salt and pepper. Cook for an additional 2 minutes, stirring often.",
-        "Add the cooked quinoa to the skillet and toss to combine.",
-        "Serve warm or cold. Enjoy!"
-      ]
+      "name": "Garlic Rice",
+      "description": "Spicy Garlic Rice",
+      "imageUrl": "https://oaidalleapiprodscus.blob.core.windows.net/private/org-VVCttQeicObq7u7sjZ4WAuxC/user-WifZ4Wi5dg1sFZtPUZ06BYKv/img-qlhSHcMTcPuA0WvyVRpwcpgO.png?st=2023-02-03T10%3A00%3A23Z&se=2023-02-03T12%3A00%3A23Z&sp=r&sv=2021-08-06&sr=b&rscd=inline&rsct=image/png&skoid=6aaadede-4fb3-4698-a8f6-684d7786b067&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2023-02-02T22%3A50%3A45Z&ske=2023-02-03T22%3A50%3A45Z&sks=b&skv=2021-08-06&sig=PCYTwEzsyxj64aKu0Is5b4tiI3uBSS9gXcw1h7uAHMg%3D"
     },
     {
-      "name": "Garlic Meatballs",
-      "description": "Savory Garlic Meatballs",
-      "imageUrl": "https://oaidalleapiprodscus.blob.core.windows.net/private/org-VVCttQeicObq7u7sjZ4WAuxC/user-WifZ4Wi5dg1sFZtPUZ06BYKv/img-ZnTSIaiYsltKmQYkmJ7LRrGa.png?st=2023-02-03T08%3A09%3A12Z&se=2023-02-03T10%3A09%3A12Z&sp=r&sv=2021-08-06&sr=b&rscd=inline&rsct=image/png&skoid=6aaadede-4fb3-4698-a8f6-684d7786b067&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2023-02-02T22%3A52%3A18Z&ske=2023-02-03T22%3A52%3A18Z&sks=b&skv=2021-08-06&sig=97LResJK%2BwA7rtyU2UTirnj2On7MFxd0wo7zbDIJa0g%3D",
-      "time": "15min",
-      "ingredients": [
-        {
-          "name": "quinoa",
-          "amount": "1 cup"
-        },
-        {
-          "name": "water",
-          "amount": "2 cups"
-        },
-        {
-          "name": "olive oil",
-          "amount": "2 tablespoons"
-        },
-        {
-          "name": "garlic, minced",
-          "amount": "1 clove"
-        },
-        {
-          "name": "diced onion",
-          "amount": "1/4 cup"
-        },
-        {
-          "name": "salt and pepper",
-          "amount": "to taste"
-        },
-        {
-          "name": "diced apples",
-          "amount": "1/2 cup"
-        },
-        {
-          "name": "diced avocados",
-          "amount": "1/2 cup"
-        },
-        {
-          "name": "apple cider vinegar",
-          "amount": "2 tablespoons"
-        },
-        {
-          "name": "sugar",
-          "amount": "1 tablespoon"
-        },
-        {
-          "name": "curry powder",
-          "amount": "1 teaspoon"
-        },
-        {
-          "name": "cinnamon",
-          "amount": "1/2 teaspoon"
-        }
-      ],
-      "instructions": [
-        "In a medium pot, bring the quinoa and water to a boil and then reduce to a simmer. Cook for 15 minutes or until the quinoa is tender.",
-        "In a large skillet, heat the olive oil over medium heat. Add the garlic and onion and cook for 5 minutes, stirring occasionally, until the onion is softened.",
-        "Add the diced apples, avocados, apple cider vinegar, sugar, curry powder, cinnamon, salt and pepper. Cook for an additional 2 minutes, stirring often.",
-        "Add the cooked quinoa to the skillet and toss to combine.",
-        "Serve warm or cold. Enjoy!"
-      ]
+      "name": "Bell Pepper and Onion Stir Fry",
+      "description": "Fiery Stir Fry",
+      "imageUrl": "https://oaidalleapiprodscus.blob.core.windows.net/private/org-VVCttQeicObq7u7sjZ4WAuxC/user-WifZ4Wi5dg1sFZtPUZ06BYKv/img-8PfXj15DyugjG7ed8p4HWcK4.png?st=2023-02-03T10%3A00%3A23Z&se=2023-02-03T12%3A00%3A23Z&sp=r&sv=2021-08-06&sr=b&rscd=inline&rsct=image/png&skoid=6aaadede-4fb3-4698-a8f6-684d7786b067&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2023-02-02T22%3A50%3A38Z&ske=2023-02-03T22%3A50%3A38Z&sks=b&skv=2021-08-06&sig=et6O4iXOZx4yn2oQxb2MTj7yEo8S1xr2bPIV5qNMwZY%3D"
     },
     {
-      "name": "Sweet Cinnamon Apples",
-      "description": "Sweet Cinnamon-Spiced Apples",
-      "imageUrl": "https://oaidalleapiprodscus.blob.core.windows.net/private/org-VVCttQeicObq7u7sjZ4WAuxC/user-WifZ4Wi5dg1sFZtPUZ06BYKv/img-ZnTSIaiYsltKmQYkmJ7LRrGa.png?st=2023-02-03T08%3A09%3A12Z&se=2023-02-03T10%3A09%3A12Z&sp=r&sv=2021-08-06&sr=b&rscd=inline&rsct=image/png&skoid=6aaadede-4fb3-4698-a8f6-684d7786b067&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2023-02-02T22%3A52%3A18Z&ske=2023-02-03T22%3A52%3A18Z&sks=b&skv=2021-08-06&sig=97LResJK%2BwA7rtyU2UTirnj2On7MFxd0wo7zbDIJa0g%3D",
-      "time": "15min",
-      "ingredients": [
-        {
-          "name": "quinoa",
-          "amount": "1 cup"
-        },
-        {
-          "name": "water",
-          "amount": "2 cups"
-        },
-        {
-          "name": "olive oil",
-          "amount": "2 tablespoons"
-        },
-        {
-          "name": "garlic, minced",
-          "amount": "1 clove"
-        },
-        {
-          "name": "diced onion",
-          "amount": "1/4 cup"
-        },
-        {
-          "name": "salt and pepper",
-          "amount": "to taste"
-        },
-        {
-          "name": "diced apples",
-          "amount": "1/2 cup"
-        },
-        {
-          "name": "diced avocados",
-          "amount": "1/2 cup"
-        },
-        {
-          "name": "apple cider vinegar",
-          "amount": "2 tablespoons"
-        },
-        {
-          "name": "sugar",
-          "amount": "1 tablespoon"
-        },
-        {
-          "name": "curry powder",
-          "amount": "1 teaspoon"
-        },
-        {
-          "name": "cinnamon",
-          "amount": "1/2 teaspoon"
-        }
-      ],
-      "instructions": [
-        "In a medium pot, bring the quinoa and water to a boil and then reduce to a simmer. Cook for 15 minutes or until the quinoa is tender.",
-        "In a large skillet, heat the olive oil over medium heat. Add the garlic and onion and cook for 5 minutes, stirring occasionally, until the onion is softened.",
-        "Add the diced apples, avocados, apple cider vinegar, sugar, curry powder, cinnamon, salt and pepper. Cook for an additional 2 minutes, stirring often.",
-        "Add the cooked quinoa to the skillet and toss to combine.",
-        "Serve warm or cold. Enjoy!"
-      ]
+      "name": "Tomato and Garlic Soup",
+      "description": "Hearty Tomato Soup",
+      "imageUrl": "https://oaidalleapiprodscus.blob.core.windows.net/private/org-VVCttQeicObq7u7sjZ4WAuxC/user-WifZ4Wi5dg1sFZtPUZ06BYKv/img-GvoklESn0CHH19ZXsmxrwRKL.png?st=2023-02-03T10%3A00%3A23Z&se=2023-02-03T12%3A00%3A23Z&sp=r&sv=2021-08-06&sr=b&rscd=inline&rsct=image/png&skoid=6aaadede-4fb3-4698-a8f6-684d7786b067&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2023-02-02T22%3A51%3A13Z&ske=2023-02-03T22%3A51%3A13Z&sks=b&skv=2021-08-06&sig=TwKmjmc7sJvbpP8l4BuuQAEG63%2BYOVG4BzOzLvq/WtM%3D"
     },
     {
-      "name": "Buttered Quinoa",
-      "description": "Buttery Quinoa Dish",
-      "imageUrl": "https://oaidalleapiprodscus.blob.core.windows.net/private/org-VVCttQeicObq7u7sjZ4WAuxC/user-WifZ4Wi5dg1sFZtPUZ06BYKv/img-ZnTSIaiYsltKmQYkmJ7LRrGa.png?st=2023-02-03T08%3A09%3A12Z&se=2023-02-03T10%3A09%3A12Z&sp=r&sv=2021-08-06&sr=b&rscd=inline&rsct=image/png&skoid=6aaadede-4fb3-4698-a8f6-684d7786b067&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2023-02-02T22%3A52%3A18Z&ske=2023-02-03T22%3A52%3A18Z&sks=b&skv=2021-08-06&sig=97LResJK%2BwA7rtyU2UTirnj2On7MFxd0wo7zbDIJa0g%3D",
-      "time": "15min",
-      "ingredients": [
-        {
-          "name": "quinoa",
-          "amount": "1 cup"
-        },
-        {
-          "name": "water",
-          "amount": "2 cups"
-        },
-        {
-          "name": "olive oil",
-          "amount": "2 tablespoons"
-        },
-        {
-          "name": "garlic, minced",
-          "amount": "1 clove"
-        },
-        {
-          "name": "diced onion",
-          "amount": "1/4 cup"
-        },
-        {
-          "name": "salt and pepper",
-          "amount": "to taste"
-        },
-        {
-          "name": "diced apples",
-          "amount": "1/2 cup"
-        },
-        {
-          "name": "diced avocados",
-          "amount": "1/2 cup"
-        },
-        {
-          "name": "apple cider vinegar",
-          "amount": "2 tablespoons"
-        },
-        {
-          "name": "sugar",
-          "amount": "1 tablespoon"
-        },
-        {
-          "name": "curry powder",
-          "amount": "1 teaspoon"
-        },
-        {
-          "name": "cinnamon",
-          "amount": "1/2 teaspoon"
-        }
-      ],
-      "instructions": [
-        "In a medium pot, bring the quinoa and water to a boil and then reduce to a simmer. Cook for 15 minutes or until the quinoa is tender.",
-        "In a large skillet, heat the olive oil over medium heat. Add the garlic and onion and cook for 5 minutes, stirring occasionally, until the onion is softened.",
-        "Add the diced apples, avocados, apple cider vinegar, sugar, curry powder, cinnamon, salt and pepper. Cook for an additional 2 minutes, stirring often.",
-        "Add the cooked quinoa to the skillet and toss to combine.",
-        "Serve warm or cold. Enjoy!"
-      ]
+      "name": "Rice with Curry Butter",
+      "description": "Creamy Curry Rice",
+      "imageUrl": "https://oaidalleapiprodscus.blob.core.windows.net/private/org-VVCttQeicObq7u7sjZ4WAuxC/user-WifZ4Wi5dg1sFZtPUZ06BYKv/img-354eRPGuEmELJb7k6h8wSjHL.png?st=2023-02-03T10%3A00%3A24Z&se=2023-02-03T12%3A00%3A24Z&sp=r&sv=2021-08-06&sr=b&rscd=inline&rsct=image/png&skoid=6aaadede-4fb3-4698-a8f6-684d7786b067&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2023-02-02T22%3A50%3A57Z&ske=2023-02-03T22%3A50%3A57Z&sks=b&skv=2021-08-06&sig=oN8I5ObQZSk2tNy87GlS4%2Bk6h1q5Vm2ooEJzMCosufE%3D"
     }
   ]
 }

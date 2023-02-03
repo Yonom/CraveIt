@@ -17,7 +17,7 @@ const SearchLayout: FC<PropsWithChildren<{}>> = ({ children }) => {
         backgroundColor: "D7D7D7"
       }}
     >
-      <Grid2 xl={6} md={8} sm={10} xs={12} px={2}>
+      <Grid2 xl={6} md={8} sm={10} xs={12} p={2}>
         <Card>
           <CardContent>{children}</CardContent>
         </Card>
