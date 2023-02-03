@@ -59,9 +59,7 @@ Instructions:
 
 8. Serve warm. Enjoy!
 
-###
-
-`;
+###`;
 
   const completion = await doCompletion(apiKey, prompt);
 

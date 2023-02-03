@@ -1,0 +1,319 @@
+{
+  "recipes": [
+    {
+      "name": "Avocado Quinoa Salad",
+      "description": "Nutritious Salad with Avocado",
+      "imageUrl": "https://oaidalleapiprodscus.blob.core.windows.net/private/org-VVCttQeicObq7u7sjZ4WAuxC/user-WifZ4Wi5dg1sFZtPUZ06BYKv/img-ZnTSIaiYsltKmQYkmJ7LRrGa.png?st=2023-02-03T08%3A09%3A12Z&se=2023-02-03T10%3A09%3A12Z&sp=r&sv=2021-08-06&sr=b&rscd=inline&rsct=image/png&skoid=6aaadede-4fb3-4698-a8f6-684d7786b067&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2023-02-02T22%3A52%3A18Z&ske=2023-02-03T22%3A52%3A18Z&sks=b&skv=2021-08-06&sig=97LResJK%2BwA7rtyU2UTirnj2On7MFxd0wo7zbDIJa0g%3D",
+      "time": "15min",
+      "ingredients": [
+        {
+          "name": "quinoa",
+          "amount": "1 cup"
+        },
+        {
+          "name": "water",
+          "amount": "2 cups"
+        },
+        {
+          "name": "olive oil",
+          "amount": "2 tablespoons"
+        },
+        {
+          "name": "garlic, minced",
+          "amount": "1 clove"
+        },
+        {
+          "name": "diced onion",
+          "amount": "1/4 cup"
+        },
+        {
+          "name": "salt and pepper",
+          "amount": "to taste"
+        },
+        {
+          "name": "diced apples",
+          "amount": "1/2 cup"
+        },
+        {
+          "name": "diced avocados",
+          "amount": "1/2 cup"
+        },
+        {
+          "name": "apple cider vinegar",
+          "amount": "2 tablespoons"
+        },
+        {
+          "name": "sugar",
+          "amount": "1 tablespoon"
+        },
+        {
+          "name": "curry powder",
+          "amount": "1 teaspoon"
+        },
+        {
+          "name": "cinnamon",
+          "amount": "1/2 teaspoon"
+        }
+      ],
+      "instructions": [
+        "In a medium pot, bring the quinoa and water to a boil and then reduce to a simmer. Cook for 15 minutes or until the quinoa is tender.",
+        "In a large skillet, heat the olive oil over medium heat. Add the garlic and onion and cook for 5 minutes, stirring occasionally, until the onion is softened.",
+        "Add the diced apples, avocados, apple cider vinegar, sugar, curry powder, cinnamon, salt and pepper. Cook for an additional 2 minutes, stirring often.",
+        "Add the cooked quinoa to the skillet and toss to combine.",
+        "Serve warm or cold. Enjoy!"
+      ]
+    },
+    {
+      "name": "Potato and Apple Curry",
+      "description": "Spicy Potato-Apple Curry",
+      "imageUrl": "https://oaidalleapiprodscus.blob.core.windows.net/private/org-VVCttQeicObq7u7sjZ4WAuxC/user-WifZ4Wi5dg1sFZtPUZ06BYKv/img-ZnTSIaiYsltKmQYkmJ7LRrGa.png?st=2023-02-03T08%3A09%3A12Z&se=2023-02-03T10%3A09%3A12Z&sp=r&sv=2021-08-06&sr=b&rscd=inline&rsct=image/png&skoid=6aaadede-4fb3-4698-a8f6-684d7786b067&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2023-02-02T22%3A52%3A18Z&ske=2023-02-03T22%3A52%3A18Z&sks=b&skv=2021-08-06&sig=97LResJK%2BwA7rtyU2UTirnj2On7MFxd0wo7zbDIJa0g%3D",
+      "time": "15min",
+      "ingredients": [
+        {
+          "name": "quinoa",
+          "amount": "1 cup"
+        },
+        {
+          "name": "water",
+          "amount": "2 cups"
+        },
+        {
+          "name": "olive oil",
+          "amount": "2 tablespoons"
+        },
+        {
+          "name": "garlic, minced",
+          "amount": "1 clove"
+        },
+        {
+          "name": "diced onion",
+          "amount": "1/4 cup"
+        },
+        {
+          "name": "salt and pepper",
+          "amount": "to taste"
+        },
+        {
+          "name": "diced apples",
+          "amount": "1/2 cup"
+        },
+        {
+          "name": "diced avocados",
+          "amount": "1/2 cup"
+        },
+        {
+          "name": "apple cider vinegar",
+          "amount": "2 tablespoons"
+        },
+        {
+          "name": "sugar",
+          "amount": "1 tablespoon"
+        },
+        {
+          "name": "curry powder",
+          "amount": "1 teaspoon"
+        },
+        {
+          "name": "cinnamon",
+          "amount": "1/2 teaspoon"
+        }
+      ],
+      "instructions": [
+        "In a medium pot, bring the quinoa and water to a boil and then reduce to a simmer. Cook for 15 minutes or until the quinoa is tender.",
+        "In a large skillet, heat the olive oil over medium heat. Add the garlic and onion and cook for 5 minutes, stirring occasionally, until the onion is softened.",
+        "Add the diced apples, avocados, apple cider vinegar, sugar, curry powder, cinnamon, salt and pepper. Cook for an additional 2 minutes, stirring often.",
+        "Add the cooked quinoa to the skillet and toss to combine.",
+        "Serve warm or cold. Enjoy!"
+      ]
+    },
+    {
+      "name": "Garlic Meatballs",
+      "description": "Savory Garlic Meatballs",
+      "imageUrl": "https://oaidalleapiprodscus.blob.core.windows.net/private/org-VVCttQeicObq7u7sjZ4WAuxC/user-WifZ4Wi5dg1sFZtPUZ06BYKv/img-ZnTSIaiYsltKmQYkmJ7LRrGa.png?st=2023-02-03T08%3A09%3A12Z&se=2023-02-03T10%3A09%3A12Z&sp=r&sv=2021-08-06&sr=b&rscd=inline&rsct=image/png&skoid=6aaadede-4fb3-4698-a8f6-684d7786b067&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2023-02-02T22%3A52%3A18Z&ske=2023-02-03T22%3A52%3A18Z&sks=b&skv=2021-08-06&sig=97LResJK%2BwA7rtyU2UTirnj2On7MFxd0wo7zbDIJa0g%3D",
+      "time": "15min",
+      "ingredients": [
+        {
+          "name": "quinoa",
+          "amount": "1 cup"
+        },
+        {
+          "name": "water",
+          "amount": "2 cups"
+        },
+        {
+          "name": "olive oil",
+          "amount": "2 tablespoons"
+        },
+        {
+          "name": "garlic, minced",
+          "amount": "1 clove"
+        },
+        {
+          "name": "diced onion",
+          "amount": "1/4 cup"
+        },
+        {
+          "name": "salt and pepper",
+          "amount": "to taste"
+        },
+        {
+          "name": "diced apples",
+          "amount": "1/2 cup"
+        },
+        {
+          "name": "diced avocados",
+          "amount": "1/2 cup"
+        },
+        {
+          "name": "apple cider vinegar",
+          "amount": "2 tablespoons"
+        },
+        {
+          "name": "sugar",
+          "amount": "1 tablespoon"
+        },
+        {
+          "name": "curry powder",
+          "amount": "1 teaspoon"
+        },
+        {
+          "name": "cinnamon",
+          "amount": "1/2 teaspoon"
+        }
+      ],
+      "instructions": [
+        "In a medium pot, bring the quinoa and water to a boil and then reduce to a simmer. Cook for 15 minutes or until the quinoa is tender.",
+        "In a large skillet, heat the olive oil over medium heat. Add the garlic and onion and cook for 5 minutes, stirring occasionally, until the onion is softened.",
+        "Add the diced apples, avocados, apple cider vinegar, sugar, curry powder, cinnamon, salt and pepper. Cook for an additional 2 minutes, stirring often.",
+        "Add the cooked quinoa to the skillet and toss to combine.",
+        "Serve warm or cold. Enjoy!"
+      ]
+    },
+    {
+      "name": "Sweet Cinnamon Apples",
+      "description": "Sweet Cinnamon-Spiced Apples",
+      "imageUrl": "https://oaidalleapiprodscus.blob.core.windows.net/private/org-VVCttQeicObq7u7sjZ4WAuxC/user-WifZ4Wi5dg1sFZtPUZ06BYKv/img-ZnTSIaiYsltKmQYkmJ7LRrGa.png?st=2023-02-03T08%3A09%3A12Z&se=2023-02-03T10%3A09%3A12Z&sp=r&sv=2021-08-06&sr=b&rscd=inline&rsct=image/png&skoid=6aaadede-4fb3-4698-a8f6-684d7786b067&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2023-02-02T22%3A52%3A18Z&ske=2023-02-03T22%3A52%3A18Z&sks=b&skv=2021-08-06&sig=97LResJK%2BwA7rtyU2UTirnj2On7MFxd0wo7zbDIJa0g%3D",
+      "time": "15min",
+      "ingredients": [
+        {
+          "name": "quinoa",
+          "amount": "1 cup"
+        },
+        {
+          "name": "water",
+          "amount": "2 cups"
+        },
+        {
+          "name": "olive oil",
+          "amount": "2 tablespoons"
+        },
+        {
+          "name": "garlic, minced",
+          "amount": "1 clove"
+        },
+        {
+          "name": "diced onion",
+          "amount": "1/4 cup"
+        },
+        {
+          "name": "salt and pepper",
+          "amount": "to taste"
+        },
+        {
+          "name": "diced apples",
+          "amount": "1/2 cup"
+        },
+        {
+          "name": "diced avocados",
+          "amount": "1/2 cup"
+        },
+        {
+          "name": "apple cider vinegar",
+          "amount": "2 tablespoons"
+        },
+        {
+          "name": "sugar",
+          "amount": "1 tablespoon"
+        },
+        {
+          "name": "curry powder",
+          "amount": "1 teaspoon"
+        },
+        {
+          "name": "cinnamon",
+          "amount": "1/2 teaspoon"
+        }
+      ],
+      "instructions": [
+        "In a medium pot, bring the quinoa and water to a boil and then reduce to a simmer. Cook for 15 minutes or until the quinoa is tender.",
+        "In a large skillet, heat the olive oil over medium heat. Add the garlic and onion and cook for 5 minutes, stirring occasionally, until the onion is softened.",
+        "Add the diced apples, avocados, apple cider vinegar, sugar, curry powder, cinnamon, salt and pepper. Cook for an additional 2 minutes, stirring often.",
+        "Add the cooked quinoa to the skillet and toss to combine.",
+        "Serve warm or cold. Enjoy!"
+      ]
+    },
+    {
+      "name": "Buttered Quinoa",
+      "description": "Buttery Quinoa Dish",
+      "imageUrl": "https://oaidalleapiprodscus.blob.core.windows.net/private/org-VVCttQeicObq7u7sjZ4WAuxC/user-WifZ4Wi5dg1sFZtPUZ06BYKv/img-ZnTSIaiYsltKmQYkmJ7LRrGa.png?st=2023-02-03T08%3A09%3A12Z&se=2023-02-03T10%3A09%3A12Z&sp=r&sv=2021-08-06&sr=b&rscd=inline&rsct=image/png&skoid=6aaadede-4fb3-4698-a8f6-684d7786b067&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2023-02-02T22%3A52%3A18Z&ske=2023-02-03T22%3A52%3A18Z&sks=b&skv=2021-08-06&sig=97LResJK%2BwA7rtyU2UTirnj2On7MFxd0wo7zbDIJa0g%3D",
+      "time": "15min",
+      "ingredients": [
+        {
+          "name": "quinoa",
+          "amount": "1 cup"
+        },
+        {
+          "name": "water",
+          "amount": "2 cups"
+        },
+        {
+          "name": "olive oil",
+          "amount": "2 tablespoons"
+        },
+        {
+          "name": "garlic, minced",
+          "amount": "1 clove"
+        },
+        {
+          "name": "diced onion",
+          "amount": "1/4 cup"
+        },
+        {
+          "name": "salt and pepper",
+          "amount": "to taste"
+        },
+        {
+          "name": "diced apples",
+          "amount": "1/2 cup"
+        },
+        {
+          "name": "diced avocados",
+          "amount": "1/2 cup"
+        },
+        {
+          "name": "apple cider vinegar",
+          "amount": "2 tablespoons"
+        },
+        {
+          "name": "sugar",
+          "amount": "1 tablespoon"
+        },
+        {
+          "name": "curry powder",
+          "amount": "1 teaspoon"
+        },
+        {
+          "name": "cinnamon",
+          "amount": "1/2 teaspoon"
+        }
+      ],
+      "instructions": [
+        "In a medium pot, bring the quinoa and water to a boil and then reduce to a simmer. Cook for 15 minutes or until the quinoa is tender.",
+        "In a large skillet, heat the olive oil over medium heat. Add the garlic and onion and cook for 5 minutes, stirring occasionally, until the onion is softened.",
+        "Add the diced apples, avocados, apple cider vinegar, sugar, curry powder, cinnamon, salt and pepper. Cook for an additional 2 minutes, stirring often.",
+        "Add the cooked quinoa to the skillet and toss to combine.",
+        "Serve warm or cold. Enjoy!"
+      ]
+    }
+  ]
+}
