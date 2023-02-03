@@ -10,7 +10,12 @@ const TEXTS = [
   "Searching the web",
   "Asking grandmas",
   "Calling Chef Ramsey",
-  "Calling Chef Ramsey",
+  "Stealing the Krusty Krab secret formula",
+  "Giving you time to get your taste buds ready",
+  "Unlocking your inner chef",
+  "Discovering exotic cuisines",
+  "Brainstorming delicious creations",
+  "Reinventing classic recipes",
 ];
 
 const LoadingPage = () => {

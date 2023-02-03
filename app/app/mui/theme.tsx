@@ -15,11 +15,6 @@ const theme = createTheme({
     },
   },
   typography: {
-    h1: {
-      fontSize: 25,
-      color: "#272D2F",
-      fontFamily: "Playfair Display",
-    },
     button: {
       textTransform: "none",
     },

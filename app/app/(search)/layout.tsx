@@ -22,9 +22,7 @@ const SearchLayout: FC<PropsWithChildren<{}>> = ({ children }) => {
         <Box display="flex" justifyContent="center" py={2}>
           <img src={image_logo.src} style={{ maxWidth: "50%" }} />
         </Box>
-        <Card elevation={0}>
-          <CardContent>{children}</CardContent>
-        </Card>
+        {children}
       </Grid2>
     </Grid2>
   );

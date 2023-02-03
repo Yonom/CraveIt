@@ -21,7 +21,9 @@ const ResultsPage = () => {
 
   return (
     <Stack spacing={2}>
-      <Typography>Your recipes are ready to go, bon appetit</Typography>
+      <Typography variant="h5" style={{ textAlign: "center" }}>
+        Your recipes are ready to go 😋
+      </Typography>
       {recipes.map((r) => {
         const handleRecipeClick = () => {
           router.push(
@@ -37,7 +39,7 @@ const ResultsPage = () => {
         };
 
         return (
-          <Box py={1} key={r.name}>
+          <Box pb={1} key={r.name}>
             <Card>
               <CardActionArea onClick={handleRecipeClick}>
                 <Stack key={r.name}>

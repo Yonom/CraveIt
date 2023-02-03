@@ -130,7 +130,7 @@ const InputPage = () => {
 
   return (
     <Stack spacing={2}>
-      <Typography variant="h1">Let's get cookin'</Typography>
+      <Typography variant="h4">Let's get cookin'</Typography>
       <Typography sx={{ fontWeight: "bold" }}>
         Get personalized recipes based on ingredients you have at home
       </Typography>
