@@ -10,10 +10,10 @@ export type Recipe = {
 };
 
 const getResults = async (ingredients: string[]) => {
-  await new Promise<void>((r) => {
-    setTimeout(() => r(), 3000);
-  });
-  return testResult;
+  // await new Promise<void>((r) => {
+  //   setTimeout(() => r(), 3000);
+  // });
+  // return testResult;
 
   const res = await fetch("https://get-recipes.yonom.workers.dev", {
     method: "POST",
