@@ -1,15 +1,15 @@
 "use client";
 
 import { Suspense } from "react";
-import ResultsPage from "./ResultsPage";
+import RecipeDetailPage from "./RecipeDetailPage";
 import LoadingPage from "../common/LoadingPage";
 
-const ResultPage = () => {
+const DetailPage = () => {
   return (
     <Suspense fallback={<LoadingPage />}>
-      <ResultsPage />
+      <RecipeDetailPage />
     </Suspense>
   );
 };
 
-export default ResultPage;
+export default DetailPage;

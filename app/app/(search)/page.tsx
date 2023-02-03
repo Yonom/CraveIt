@@ -125,17 +125,14 @@ const InputPage = () => {
   const router = useRouter();
 
   const handleSubmit = () => {
-    router.push("/results?q=" + ingredients.join(","));
+    router.push("/results?q=" + encodeURIComponent(ingredients.join(",")));
   };
 
   return (
     <Stack spacing={2}>
-      <Typography sx={{ fontSize: 24 }}>Let's get cookin'</Typography>
+      <Typography variant="h1">Let's get cookin'</Typography>
       <Typography sx={{ fontWeight: "bold" }}>
         Get personalized recipes based on ingredients you have at home
-      </Typography>
-      <Typography sx={{ fontStyle: "italic" }}>
-        What's in your fridge and pantry?
       </Typography>
       <Autocomplete
         style={{ zIndex: 1 }}
@@ -157,7 +154,11 @@ const InputPage = () => {
           ))
         }
         renderInput={(params) => (
-          <TextField {...params} label="Ingredients" placeholder="Favorites" />
+          <TextField
+            {...params}
+            label="What's in your fridge and pantry?"
+            placeholder="Choose an item or type your own"
+          />
         )}
       />
       <Lottie

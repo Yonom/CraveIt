@@ -5,7 +5,7 @@ type Recipe = {
   description: string;
 };
 
-const generateInstructions = async (
+const generateDetails = async (
   apiKey: string,
   ingredients: string[],
   recipe: Recipe
@@ -65,7 +65,7 @@ Instructions:
     .trim()
     .replace(/[^\S\r\n]*\n[^\S\r\n]*/g, "\n")
     .match(
-      /Time: (?<time>.+?)\n+Ingredients:\n\n(?<ingredients>(?:- .+\n?)+)\nInstructions:\n{2,}(?<instructions>(?:.+\n*)+)$/
+      /Time: (?<time>.+?)\n+Ingredients:\n+(?<ingredients>(?:- .+\n?)+)\nInstructions:\n+(?<instructions>(?:.+\n*)+)$/
     )?.groups as
     | {
         time: string;
@@ -86,26 +86,30 @@ Instructions:
       prompt,
       completion,
     },
-    time: match.time,
-    ingredients: [
-      ...match.ingredients.matchAll(/^- (?<name>.+?)(?: \/ (?<amount>.+))?$/gm),
-    ]
-      .map((a) => a.groups as { name: string; amount: string })
-      .filter((a) => a && a.name)
-      .map((a) => ({
-        name: a.name.trim(),
-        amount: a.amount.trim(),
-      })),
-    instructions: match.instructions
-      .split("\n\n")
-      .map((i) =>
-        i
-          .trim()
-          .replace(/^[0-9]+\. /, "")
-          .trim()
-      )
-      .filter((i) => i),
+    details: {
+      time: match.time,
+      ingredients: [
+        ...match.ingredients.matchAll(
+          /^- (?<name>.+?)(?: \/ (?<amount>.+))?$/gm
+        ),
+      ]
+        .map((a) => a.groups as { name: string; amount: string })
+        .filter((a) => a && a.name)
+        .map((a) => ({
+          name: a.name.trim(),
+          amount: a.amount.trim(),
+        })),
+      instructions: match.instructions
+        .split("\n\n")
+        .map((i) =>
+          i
+            .trim()
+            .replace(/^[0-9]+\. /, "")
+            .trim()
+        )
+        .filter((i) => i),
+    },
   };
 };
 
-export default generateInstructions;
+export default generateDetails;

@@ -1,0 +1,9 @@
+name = "get-recipe-details"
+main = "src/index.ts"
+compatibility_date = "2023-01-29"
+
+[env.dev]
+
+# The necessary secrets are:
+# - OPENAI_API_KEY
+# - API_KEY

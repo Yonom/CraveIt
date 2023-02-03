@@ -18,7 +18,7 @@ The description should describe the dish in less than 6 words and will be used t
 
 Don't show anything else than name and description.
 
-The structure should be similar to the below:
+The structure must match the one below (do not include enumeration):
 
 ###
 

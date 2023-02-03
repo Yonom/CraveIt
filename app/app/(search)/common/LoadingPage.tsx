@@ -10,6 +10,7 @@ const TEXTS = [
   "Searching the web",
   "Asking grandmas",
   "Calling Chef Ramsey",
+  "Calling Chef Ramsey",
 ];
 
 const LoadingPage = () => {

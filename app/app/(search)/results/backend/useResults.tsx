@@ -3,22 +3,19 @@
 import { use } from "react";
 import testResult from "./testResult.json";
 
-type Recipe = {
+export type Recipe = {
   name: string;
-  description?: string;
-  imageUrl?: string;
-  time?: string;
-  ingredients?: string;
-  instructions?: string;
+  description: string;
+  imageUrl: string;
 };
 
 const getResults = async (ingredients: string[]) => {
   await new Promise<void>((r) => {
-    setTimeout(() => r(), 10000);
+    setTimeout(() => r(), 3000);
   });
   return testResult;
 
-  const res = await fetch("https://get-recipes-dev.yonom.workers.dev", {
+  const res = await fetch("https://get-recipes.yonom.workers.dev", {
     method: "POST",
     body: JSON.stringify({
       key: "MLp01puIMCItAbGio0Wg",

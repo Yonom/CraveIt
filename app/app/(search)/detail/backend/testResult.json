@@ -1,0 +1,40 @@
+{
+  "details": {
+    "time": "30min",
+    "ingredients": [
+      {
+        "name": "long grain white rice",
+        "amount": "2 cups"
+      },
+      {
+        "name": "water",
+        "amount": "2 cups"
+      },
+      {
+        "name": "Strawberries",
+        "amount": "2 cups"
+      },
+      {
+        "name": "Lemons",
+        "amount": "2"
+      },
+      {
+        "name": "butter",
+        "amount": "2 tablespoons"
+      },
+      {
+        "name": "Salt, pepper, curry, sugar, cinnamon, olive oil, sunflower oil, garlic, onion, vinegar",
+        "amount": "to taste"
+      }
+    ],
+    "instructions": [
+      "Preheat oven to 350F.",
+      "In a pot, add the rice, water, butter, and a pinch of salt. Bring to a boil, reduce the heat and simmer for 15 minutes or until the water is absorbed.",
+      "Transfer the cooked rice to a baking dish and spread it evenly.",
+      "Top with sliced strawberries and lemon slices.",
+      "Sprinkle the salt, pepper, curry, sugar, cinnamon, olive oil, sunflower oil, garlic, onion, and vinegar over the top.",
+      "Bake in preheated oven for 15 minutes, or until the cheese is melted and bubbly on top.",
+      "Serve warm and enjoy!"
+    ]
+  }
+}
