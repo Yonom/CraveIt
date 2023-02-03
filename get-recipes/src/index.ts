@@ -1,15 +1,27 @@
-declare global {
-  const OPENAI_API_KEY: string;
-}
+import generateInstructions from "./generateInstructions";
+import generateRecipes from "./generateRecipes";
+import { doImageGeneration } from "./openai";
 
-interface Env {
-  OPENAI_API_KEY: string;
-}
+type Env = {
+  OPENAI_API_KEY: string; // API key to access OPENAI
+  API_KEY: string; // our own API key
+};
 
-const allowedOrigins = [
-  "http://localhost:3000",
-  "https://antler-recipe-finder.vercel.app",
-];
+type Params = {
+  ingredients: string[];
+  key: string;
+};
+
+type Recipe = {
+  name: string;
+  description: string;
+  imageUrl?: string;
+  time?: string;
+  ingredients?: { name: string; amount: string }[];
+  instructions?: string[];
+};
+
+const allowedOrigins = ["http://localhost:3000", "https://tc7.vercel.app"];
 
 const invalidRequest = () => {
   return new Response(null, {
@@ -27,44 +39,82 @@ export default {
     const origin = request.headers.get("Origin") ?? "";
     if (!allowedOrigins.includes(origin)) return invalidRequest();
 
-    const { ingredients, key } = (await request.json()) as {
-      ingredients: string[];
-      key: string;
-    };
-    if (key !== "MLp01puIMCItAbGio0Wg") return invalidRequest();
-    if (!Array.isArray(ingredients) || ingredients.length < 2)
+    const { ingredients, key } = (await request.json()) as Params;
+    if (
+      key !== env.API_KEY ||
+      !Array.isArray(ingredients) ||
+      ingredients.length < 2
+    )
       return invalidRequest();
 
-    // const query = await fetch("https://api.openai.com/v1/completions", {
-    //   method: "POST",
-    //   headers: {
-    //     "Content-Type": "application/json",
-    //     Authorization: "Bearer " + env.OPENAI_API_KEY,
-    //     Accept: "application/json",
-    //   },
-    //   body: JSON.stringify({
-    //     model: "text-davinci-003",
-    //     input,
-    //   }),
-    //   cf: { cacheTtl: 60 * 60 * 24 * 7, cacheEverything: true },
-    // });
-    // const res = await query.json();
+    // generate recipes
+    try {
+      const { recipes, diag } = await generateRecipes(
+        env.OPENAI_API_KEY,
+        ingredients
+      );
 
-    return new Response(
-      JSON.stringify({
-        recipes: [
-          {
-            name: "Test",
+      const completions = [diag];
+      // start two tasks in parallel: generate images, cooking instructions
+
+      // generate images
+      const imageTask = Promise.all(
+        recipes.slice(0, 1).map(async (r: Recipe) => {
+          r.imageUrl = await doImageGeneration(
+            env.OPENAI_API_KEY,
+            r.description
+          );
+        })
+      );
+
+      // cooking instructions
+      const instructionTask = Promise.all(
+        recipes.slice(0, 1).map(async (r: Recipe) => {
+          const result = await generateInstructions(
+            env.OPENAI_API_KEY,
+            ingredients,
+            r
+          );
+
+          completions.push(result.diag);
+
+          r.time = result.time;
+          r.ingredients = result.ingredients;
+          r.instructions = result.instructions;
+        })
+      );
+
+      await Promise.all([imageTask, instructionTask]);
+
+      return new Response(
+        JSON.stringify({
+          completions,
+          recipes,
+        }),
+        {
+          headers: {
+            "Access-Control-Allow-Origin": origin,
+            Vary: "Origin",
+            "Content-Type": "application/json;charset=UTF-8",
           },
-        ],
-      }),
-      {
-        headers: {
-          "Access-Control-Allow-Origin": origin,
-          Vary: "Origin",
-          "Content-Type": "application/json;charset=UTF-8",
-        },
-      }
-    );
+        }
+      );
+    } catch (ex: unknown) {
+      return new Response(
+        JSON.stringify({
+          errName: (ex as Error).name,
+          errMessage: (ex as Error).message,
+          errStack: (ex as Error).stack,
+        }),
+        {
+          status: 500,
+          headers: {
+            "Access-Control-Allow-Origin": origin,
+            Vary: "Origin",
+            "Content-Type": "application/json;charset=UTF-8",
+          },
+        }
+      );
+    }
   },
 };

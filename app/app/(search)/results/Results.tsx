@@ -8,7 +8,7 @@ type Recipe = {
 };
 
 const getResults = async (ingredients: string[]) => {
-  const res = await fetch("https://get-recipes.yonom.workers.dev", {
+  const res = await fetch("https://get-recipes-dev.yonom.workers.dev", {
     method: "POST",
     body: JSON.stringify({
       key: "MLp01puIMCItAbGio0Wg",
