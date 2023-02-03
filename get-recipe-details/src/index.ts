@@ -14,7 +14,7 @@ type Params = {
   };
 };
 
-const allowedOrigins = ["http://localhost:3000", "https://craveit.vercel.app/"];
+const allowedOrigins = ["http://localhost:3000", "https://craveit.vercel.app"];
 
 const invalidRequest = () => {
   return new Response(null, {
