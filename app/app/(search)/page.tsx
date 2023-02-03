@@ -10,6 +10,8 @@ import {
 } from "@mui/material";
 import { useRouter } from "next/navigation";
 import { useState } from "react";
+import animation from "./homeAnimation.json";
+import Lottie from "lottie-react";
 
 const INGREDIENTS = [
   "Apples",
@@ -35,7 +37,6 @@ const INGREDIENTS = [
   "Bread",
   "Flour",
   "Tortillas",
-  "Chicken",
   "Eggs",
   "Beef",
   "Turkey",
@@ -43,7 +44,8 @@ const INGREDIENTS = [
   "Butter",
   "Sliced Cheese",
   "Shredded Cheese",
-  "Milk Sour Cream",
+  "Milk",
+  "Sour Cream",
   "Greek Yoghurt",
   "Baking Powder",
   "Baking Soda",
@@ -72,7 +74,6 @@ const INGREDIENTS = [
   "Dough",
   "Pie",
   "Crust",
-  "Chicken",
   "Salsa",
   "Diced",
   "Jam",
@@ -84,7 +85,7 @@ const INGREDIENTS = [
   "Black Pepper",
   "Chilli Powder",
   "Cinnamon",
-  "Crushed Red Pepper",
+  "Red Pepper",
   "Cumin",
   "Garlic",
   "Powder",
@@ -129,11 +130,17 @@ const InputPage = () => {
 
   return (
     <Stack spacing={2}>
+      <Typography sx={{ fontSize: 24 }}>Let's get cookin'</Typography>
       <Typography sx={{ fontWeight: "bold" }}>
-        Get Recipes To Cook Tonight
+        Get personalized recipes based on ingredients you have at home
+      </Typography>
+      <Typography sx={{ fontStyle: "italic" }}>
+        What's in your fridge and pantry?
       </Typography>
       <Autocomplete
+        style={{ zIndex: 1 }}
         multiple
+        filterSelectedOptions
         options={INGREDIENTS}
         value={ingredients}
         onChange={(event, newValue) => {
@@ -153,12 +160,22 @@ const InputPage = () => {
           <TextField {...params} label="Ingredients" placeholder="Favorites" />
         )}
       />
+      <Lottie
+        animationData={animation}
+        style={{
+          width: 300,
+          marginTop: -40,
+          marginBottom: -65,
+          alignSelf: "center",
+        }}
+        loop={true}
+      />
       <Button
         variant="contained"
         disabled={ingredients.length < MIN_INGREDIENTS}
         onClick={handleSubmit}
       >
-        Submit
+        See recipes
       </Button>
       <Typography variant="body2" sx={{ fontStyle: "oblique" }}>
         By Leonie, Kofi, Philipp, Johannes, Simon

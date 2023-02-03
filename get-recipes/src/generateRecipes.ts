@@ -2,24 +2,28 @@ import { doCompletion } from "./openai";
 
 const generateRecipes = async (apiKey: string, ingredients: string[]) => {
   const NUM_SUGGESTIONS = 5;
-  const prompt = `I have at home the following ingredients:
+  const prompt = `Give me the name and description of ${
+  NUM_SUGGESTIONS + 1
+} different recipes containing only the following side ingredients and main ingredients:
 
-Base Ingredients: Salt, Pepper, Curry, sugar, cinnamon, Olive Oil, Sunflower Oil, Butter, Garlic, Onion, Vinegar
+side ingredients: """Salt, Pepper, Curry, sugar, cinnamon, Olive Oil, Sunflower Oil, Butter, Garlic, Onion, Vinegar"""
 
-Main Ingredients: ${ingredients.join(", ")}
+main ingredients: """${ingredients.join(", ")}"""
+
+Each recipe should include at least 1 main ingredient.
 
 The available kitchen equipment is basic.
 
-Give me the name and description of ${
-    NUM_SUGGESTIONS + 1
-  } different recipies that contain only the ingredients mentioned above.
+The description should describe the dish in less than 6 words and will be used to generate a recipe picture with DALL-E (DALL-E is a text to image ML model). 
 
-The Description should not contain one of the base ingredients mentioned above and should not be longer than 6 words. Don't show anything else than name and description.
+Don't show anything else than name and description.
+
+The structure should be similar to the below:
 
 ###
 
 Name: Ham and Egg Pasta
-Description: Pasta Dish with ham and Egg
+Description: Delicious Pasta Dish with Ham and Egg
 
 ###
 

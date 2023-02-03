@@ -5,9 +5,19 @@ import testResult from "./testResult.json";
 
 type Recipe = {
   name: string;
+  description?: string;
+  imageUrl?: string;
+  time?: string;
+  ingredients?: string;
+  instructions?: string;
 };
 
 const getResults = async (ingredients: string[]) => {
+  // await new Promise<void>((r) => {
+  //   setTimeout(() => r(), 10000);
+  // });
+  // return testResult;
+
   const res = await fetch("https://get-recipes-dev.yonom.workers.dev", {
     method: "POST",
     body: JSON.stringify({
@@ -34,6 +44,5 @@ const getResultsOrCache = (ingredients: string[]) => {
 };
 
 export const useResults = (ingredients: string[]) => {
-  return testResult;
   return use(getResultsOrCache(ingredients));
 };

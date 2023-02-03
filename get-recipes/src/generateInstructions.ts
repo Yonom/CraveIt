@@ -10,18 +10,16 @@ const generateInstructions = async (
   ingredients: string[],
   recipe: Recipe
 ) => {
-  const prompt = `I have at home the following ingredients:
+  const prompt = `Give me the recipe containing only the following side ingredients and main ingredients based on the name and description below:
 
-Base Ingredients: Salt, Pepper, Curry, sugar, cinnamon, Olive Oil, Sunflower Oil, Butter, Garlic, Onion, Vinegar
+side ingredients: """Salt, Pepper, Curry, sugar, cinnamon, Olive Oil, Sunflower Oil, Butter, Garlic, Onion, Vinegar"""
 
-Main Ingredients: ${ingredients.join(", ")}
+main ingredients: """${ingredients.join(", ")}"""
+
+Name: """${recipe.name}"""
+Description: """${recipe.description}"""
 
 The available kitchen equipment is basic.
-
-Give me the recipe that contains only but not necessary all the ingredients mentioned above based on following name and description:
-
-Name: ${recipe.name}
-Description: ${recipe.description}
 
 The structure should be similar to the below:
 

@@ -186,10 +186,20 @@
     minimatch "^3.1.2"
     strip-json-comments "^3.1.1"
 
+"@fontsource/playfair-display@^4.5.13":
+  version "4.5.13"
+  resolved "https://registry.yarnpkg.com/@fontsource/playfair-display/-/playfair-display-4.5.13.tgz#6024a7edaf4e492eeb2e57467a5a44eed00ad924"
+  integrity sha512-41yD3XW8jATcZO8E2U6Xe9MIaogPdjrGkC4ixNzAIdrR3BvLxXpeHU2xw3rwIq8aHhFUYwLnE6Lq+BWSTZZH9w==
+
 "@fontsource/roboto@^4.5.8":
   version "4.5.8"
   resolved "https://registry.yarnpkg.com/@fontsource/roboto/-/roboto-4.5.8.tgz#56347764786079838faf43f0eeda22dd7328437f"
   integrity sha512-CnD7zLItIzt86q4Sj3kZUiLcBk1dSk81qcqgMGaZe7SQ1P8hFNxhMl5AZthK1zrDM5m74VVhaOpuMGIL4gagaA==
+
+"@fontsource/source-sans-3@^4.5.13":
+  version "4.5.13"
+  resolved "https://registry.yarnpkg.com/@fontsource/source-sans-3/-/source-sans-3-4.5.13.tgz#2c1f30e42665e41cd0a8a228f819d8dc8bffa8f4"
+  integrity sha512-FB0RyzpcRWduGcpZv3lz7CD5NBRvpmj0uv5uVvvpolOxT/nnEbLbtYhibNvB142Vlv/mU5x4QRgy0L3tXY6qWw==
 
 "@humanwhocodes/config-array@^0.11.8":
   version "0.11.8"

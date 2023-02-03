@@ -1,7 +1,7 @@
 "use client";
 
 import { useSearchParams } from "next/navigation";
-import { useResults } from "./useResults";
+import { useResults } from "./backend/useResults";
 
 const Results = () => {
   const searchParams = useSearchParams();
@@ -11,7 +11,15 @@ const Results = () => {
   return (
     <>
       {recipes.map((r) => (
-        <p>{r.name}</p>
+        <>
+          <p>{r.name}</p>
+          <img
+            src={r.imageUrl}
+            style={{
+              borderRadius: 10,
+            }}
+          />
+        </>
       ))}
     </>
   );

@@ -1,22 +1,13 @@
 "use client";
 
 import { Suspense } from "react";
-import Lottie from "lottie-react";
-import animation from "./animation.json";
-import Results from "./Results";
+import Results from "./ResultsPage";
+import LoadingPage from "./LoadingPage";
 
 const ResultPage = () => {
   return (
     <>
-      <Suspense
-        fallback={
-          <Lottie
-            animationData={animation}
-            style={{ width: 300, height: 300 }}
-            loop={true}
-          />
-        }
-      >
+      <Suspense fallback={<LoadingPage />}>
         <Results />
       </Suspense>
     </>
