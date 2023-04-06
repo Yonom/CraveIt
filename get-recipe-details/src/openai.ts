@@ -3,7 +3,7 @@ export const doCompletion = async (
   prompt: string,
   temperature = 0.7
 ) => {
-  const query = await fetch("https://api.openai.com/v1/completions", {
+  const query = await fetch("https://api.openai.com/v1/chat/completions", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
@@ -11,15 +11,21 @@ export const doCompletion = async (
       Accept: "application/json",
     },
     body: JSON.stringify({
-      model: "text-davinci-003",
+      model: "gpt-4",
       max_tokens: 2000,
-      prompt,
+      messages: [{ role: "user", content: prompt }],
       temperature,
     }),
     cf: { cacheTtl: 60 * 60 * 24 * 7, cacheEverything: true },
   });
-  const { choices: [{ text }] = [{ text: "" }] } = (await query.json()) as {
-    choices: { text: string }[];
+  const {
+    choices: [
+      {
+        message: { content },
+      },
+    ] = [{ message: { content: "" } }],
+  } = (await query.json()) as {
+    choices: { message: { content: string } }[];
   };
-  return text;
+  return content;
 };
