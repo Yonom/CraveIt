@@ -38,7 +38,6 @@ const INGREDIENTS = [
   "Flour",
   "Tortillas",
   "Eggs",
-  "Beef",
   "Turkey",
   "Meat",
   "Butter",
@@ -130,8 +129,10 @@ const InputPage = () => {
 
   return (
     <Stack spacing={2}>
-      <Typography variant="h4" sx={{ textAlign: 'center' }}>Let's get cookin'</Typography>
-      <Typography sx={{ textAlign: 'center'}}>
+      <Typography variant="h4" sx={{ textAlign: "center" }}>
+        Let's get cookin'
+      </Typography>
+      <Typography sx={{ textAlign: "center" }}>
         Get personalized recipes based on ingredients you have at home
       </Typography>
       <Autocomplete

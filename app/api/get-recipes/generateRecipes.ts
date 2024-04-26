@@ -1,10 +1,10 @@
-import { doCompletion } from "./openai";
+import { doCompletion } from "../openai";
 
-const generateRecipes = async (apiKey: string, ingredients: string[]) => {
+const generateRecipes = async (ingredients: string[]) => {
   const NUM_SUGGESTIONS = 5;
   const prompt = `Give me the name and description of ${
-  NUM_SUGGESTIONS + 1
-} different recipes containing only the following side ingredients and main ingredients:
+    NUM_SUGGESTIONS + 1
+  } different recipes containing only the following side ingredients and main ingredients:
 
 side ingredients: """Salt, Pepper, Curry, sugar, cinnamon, Olive Oil, Sunflower Oil, Butter, Garlic, Onion, Vinegar"""
 
@@ -29,7 +29,7 @@ Description: Delicious Pasta Dish with Ham and Egg
 
 `;
 
-  const completion = await doCompletion(apiKey, prompt);
+  const completion = await doCompletion(prompt);
 
   return {
     diag: {

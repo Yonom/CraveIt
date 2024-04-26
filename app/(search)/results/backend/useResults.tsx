@@ -1,7 +1,6 @@
 "use client";
 
 import { use } from "react";
-import testResult from "./testResult.json";
 
 export type Recipe = {
   name: string;
@@ -10,15 +9,9 @@ export type Recipe = {
 };
 
 const getResults = async (ingredients: string[]) => {
-  // await new Promise<void>((r) => {
-  //   setTimeout(() => r(), 3000);
-  // });
-  // return testResult;
-
-  const res = await fetch("https://get-recipes.yonom.workers.dev", {
+  const res = await fetch("/api/get-recipes", {
     method: "POST",
     body: JSON.stringify({
-      key: "MLp01puIMCItAbGio0Wg",
       ingredients,
     }),
   });

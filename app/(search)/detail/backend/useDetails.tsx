@@ -1,7 +1,6 @@
 "use client";
 
 import { use } from "react";
-import testResult from "./testResult.json";
 
 type InputRecipe = {
   name: string;
@@ -15,13 +14,9 @@ type RecipeDetails = {
 };
 
 const getDetails = async (ingredients: string[], recipe: InputRecipe) => {
-  // TODO temp
-  // return testResult.details;
-
-  const res = await fetch("https://get-recipe-details.yonom.workers.dev", {
+  const res = await fetch("/api/get-recipe-details", {
     method: "POST",
     body: JSON.stringify({
-      key: "MLp01puIMCItAbGio0Wg",
       ingredients,
       recipe,
     }),

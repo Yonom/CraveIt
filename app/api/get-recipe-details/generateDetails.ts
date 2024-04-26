@@ -1,15 +1,11 @@
-import { doCompletion } from "./openai";
+import { doCompletion } from "../openai";
 
 type Recipe = {
   name: string;
   description: string;
 };
 
-const generateDetails = async (
-  apiKey: string,
-  ingredients: string[],
-  recipe: Recipe
-) => {
+const generateDetails = async (ingredients: string[], recipe: Recipe) => {
   const prompt = `Give me the recipe containing only the following side ingredients and main ingredients based on the name and description below:
 
 side ingredients: """Salt, Pepper, Curry, sugar, cinnamon, Olive Oil, Sunflower Oil, Butter, Garlic, Onion, Vinegar"""
@@ -59,7 +55,7 @@ Instructions:
 
 ###`;
 
-  const completion = await doCompletion(apiKey, prompt);
+  const completion = await doCompletion(prompt);
 
   const match = completion
     .trim()
@@ -88,11 +84,9 @@ Instructions:
     },
     details: {
       time: match.time,
-      ingredients: [
-        ...match.ingredients.matchAll(
-          /^- (?<name>.+?)(?: \/ (?<amount>.+))?$/gm
-        ),
-      ]
+      ingredients: Array.from(
+        match.ingredients.matchAll(/^- (?<name>.+?)(?: \/ (?<amount>.+))?$/gm)
+      )
         .map((a) => a.groups as { name: string; amount: string })
         .filter((a) => a && a.name)
         .map((a) => ({
